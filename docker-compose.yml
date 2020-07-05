@@ -1,0 +1,10 @@
+version: '3'
+services:
+  swagger-ui:
+    build: .
+    container_name: swagger-ui
+    ports:
+      - '9800:8080'
+    restart: always
+    volumes:
+      - /Users/liubiao/opt/vol/swagger-ui/docs:/project/swagger-ui/public/docs
